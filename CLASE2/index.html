@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sitio ejemplo apache (httpd)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <p>Este es el cuerpo del html.</p>
+        <script src="" async defer></script>
+
+
+        <!--
+            -----  COMANDOS  ----
+            1 - Para generar las imagenes:
+                En la carpeta donde está el Dockerfile:
+                        <docker build . >
+                La imagen de apache:
+                        <docker pull httpd>
+            2 - Para crear el contenedor:
+                        <docker -d run -p 80:80 <nombreDeLaImagenConTAG<none>>>
+            3 - Para corroborar estado del contenedor:
+                        <docker ps>
+            4-  Para ver listado de contenedores:
+                        <docker ps -a>
+            5 - Para levantar el index (con el contenedor corriendo):
+                URL: localhost
+        -->
+    </body>
+</html>
