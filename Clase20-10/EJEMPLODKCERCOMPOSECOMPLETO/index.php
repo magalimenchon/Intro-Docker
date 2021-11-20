@@ -4,6 +4,5 @@
     </head>
     <body>
         <?php echo '<p>Hello World</p>';?>
-        <p>Modificado</p>
     </body>
 </html>
