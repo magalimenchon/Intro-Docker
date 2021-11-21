@@ -7,7 +7,7 @@ class FlatModel
 
     function __construct()
     {
-        $this->db = new PDO('mysql:host=localhost;' . 'dbname=db_airbnb;charset=utf8', 'root', '');
+        $this->db = new PDO('mysql:host=dbseminario;' . 'dbname=db_airbnb;charset=utf8', 'root', 'tudai');
     }
 
     //Listado de departamentos, con sus campos y la ciudad a la que pertenece

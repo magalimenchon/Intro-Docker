@@ -37,5 +37,16 @@ contiene:
             //directorio de trabajo donde va a estar sirviendo los archivos el apache,
               que es: /var/www/html
 
-    
+
+CUANDO SE COMUNICA UN CONTENEDOR CON OTRO, SE DEBE HACER POR MEDIO
+DEL NOMBRE QUE SE LE REFIRIÓ EN EL SERVICIO:
+        EJ: ver desde el localhost phpMyAdmin al que esta referido.
+Por eso, se debe cambiar al dbseminario por localhost; sino genera error:
+
+Fatal error: Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in
+/var/www/html/Model/CityModel.php:8 Stack trace: #0 /var/www/html/Model/CityModel.php(8):
+PDO->__construct('mysql:host=loca...', 'root', '') #1 /var/www/html/Controller/CityController.php(19):
+CityModel->__construct() #2 /var/www/html/RouterClass.php(41): CityController->__construct()
+#3 /var/www/html/RouterClass.php(65): Route->run() #4 /var/www/html/Router.php(55): Router->route('', 'GET')
+#5 {main} thrown in /var/www/html/Model/CityModel.php on line 8
     
